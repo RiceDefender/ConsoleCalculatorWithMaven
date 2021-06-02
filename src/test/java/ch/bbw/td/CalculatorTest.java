@@ -38,4 +38,11 @@ public class CalculatorTest {
         assertTrue(testee.subtraction(5, -3) == 8);
     }
 
+    @Test
+    public void testSubtractionTwoNegativeIsOk(){
+        testee = new Calculator();
+        assertTrue(testee.subtraction(-10,-10)==0);
+        assertTrue(testee.subtraction(-5,-15)==10);
+    }
+
 }
