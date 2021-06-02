@@ -24,4 +24,11 @@ public class CalculatorTest {
         assertTrue(testee.summe(-200,100)== -100);
     }
 
+    @Test
+    public void testAdditionTwoNegativeIsOk(){
+        testee = new Calculator();
+        assertTrue(testee.summe(-100,-250)== -350);
+        assertTrue(testee.summe(-12,-6)==-18);
+    }
+
 }
