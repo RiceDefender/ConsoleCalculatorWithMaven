@@ -1,4 +1,4 @@
-package org.example;
+package ch.bbw.td;
 
 /**
  * Hello world!
