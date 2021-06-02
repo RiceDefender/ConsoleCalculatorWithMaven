@@ -18,5 +18,10 @@ public class CalculatorTest {
         assertTrue(testee.subtraction(25,10) == 15);
     }
 
+    @Test
+    public void testAdditionOneNegativeOnePositiveIsOk(){
+        testee = new Calculator();
+        assertTrue(testee.summe(-200,100)== -100);
+    }
 
 }
