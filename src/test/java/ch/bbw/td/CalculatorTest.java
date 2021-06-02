@@ -31,4 +31,11 @@ public class CalculatorTest {
         assertTrue(testee.summe(-12,-6)==-18);
     }
 
+    @Test
+    public void testSubtractionOnePositiveOneNegativeIsOk(){
+        testee = new Calculator();
+        assertTrue(testee.subtraction(10,-5) == 15);
+        assertTrue(testee.subtraction(5, -3) == 8);
+    }
+
 }
