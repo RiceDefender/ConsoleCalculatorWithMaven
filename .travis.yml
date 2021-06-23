@@ -1,2 +1,10 @@
 language: java
 script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: S6skdZ1Ox55GQaj6RRtwXQZRChbVEeI2VrJfuqc6Ndzz9C4i0Z04PiRgW7JsQbTTPsdRL2YGJUVGfnDUHjstJVXWROtmPSSVlryV+T2vfRJ/QF0dusoFzWf8qDxUCRBC9jL6iGxl2Wp/6w41/LWtoqDikJrmQWUosMvW1AUASJkcugp7InR/LufbZpjsEF9MRt7NcbikxwNhjkflT0dpUIKmvjb1f8MUNS8sFkLOuIA3DS7FGHdqJc7HiwuWH0xT0PD8zJ9EqyGYu37QCNTHgEYrA5VrivKgdtXTs3oz5Y3nJqKyvOOYxmU5LtkCBhwDlNNYJlKiAAg2PsSSKnl8hrnNc+uOiD5vRn8IlNvOCNRbqX0dibeMIaijNsJiB2my5+vJKOdP6JSZcHEyY0hqQ9AH9hzlqt3bJdaxaaudsnr9z+dqSbRImDhL5gN950TrwEUFS1uSMTSKK9bbe0sB7RvKC9kr4b1ZSpXCR5ry9dXkImRdL0jlJW5m9N+E+W55zhb+rRRWi/lPtHv4P7uwg00XV0F3CbpmsOsWCD9lbUhQDEHl0Npwh962nj+S98xPSYppv2WN2EnSpr4GDdSztkfY9NSjoQUdOvhs+bBrN7GLnFK14ZZhqSx2tneN9dMapps++Jrt4GoIggzrturwPTBBHu25rQaU7o4ESgqRfn8=
+  file: "/home/travis/build/RiceDefender/ConsoleCalculatorWithMaven/target/ConsoleCalculatorWithMaven-1.0-SNAPSHOT.jar to /home/travis/.m2/repository/org/example/ConsoleCalculatorWithMaven/1.0-SNAPSHOT/ConsoleCalculatorWithMaven-1.0-SNAPSHOT.jar"
+  skip_cleanup: true
+  on:
+    tags: true
