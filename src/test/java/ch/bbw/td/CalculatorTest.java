@@ -1,10 +1,9 @@
 package ch.bbw.td;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class CalculatorTest {
     Calculator testee;
@@ -70,5 +69,10 @@ public class CalculatorTest {
     @Test
     public void testAdditionOneNegativeOneMinIsOk(){
         assertTrue(testee.summe(Integer.MIN_VALUE, -5)==Integer.MAX_VALUE-4);
+    }
+
+    @Test
+    public void testSubtractionOneMaxOnePositiveIsOk(){
+        assertTrue(testee.subtraction(Integer.MIN_VALUE, 5)==Integer.MAX_VALUE-4);
     }
 }
