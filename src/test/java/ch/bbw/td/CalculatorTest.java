@@ -52,4 +52,8 @@ public class CalculatorTest {
       assertTrue(testee.summe(Integer.MAX_VALUE, 5)==Integer.MIN_VALUE+4);
     }
 
+    @Test
+    public void testtwoMaxAddition(){
+        assertTrue(testee.summe(Integer.MAX_VALUE, Integer.MAX_VALUE)== -2);
+    }
 }
