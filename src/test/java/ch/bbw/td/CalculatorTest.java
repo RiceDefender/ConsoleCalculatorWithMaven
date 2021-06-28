@@ -61,4 +61,9 @@ public class CalculatorTest {
     public void testAdditionOneMinOneMaxIsOk(){
         assertTrue(testee.summe(Integer.MAX_VALUE, Integer.MIN_VALUE)==-1);
     }
+
+    @Test
+    public void testAdditionTwoMinIsOk(){
+        assertTrue(testee.summe(Integer.MIN_VALUE, Integer.MIN_VALUE)==0);
+    }
 }
