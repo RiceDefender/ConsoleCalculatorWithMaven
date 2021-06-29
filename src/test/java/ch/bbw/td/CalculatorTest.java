@@ -72,7 +72,12 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testSubtractionOneMaxOnePositiveIsOk(){
+    public void testSubtractionOneMinOnePositiveIsOk(){
         assertTrue(testee.subtraction(Integer.MIN_VALUE, 5)==Integer.MAX_VALUE-4);
+    }
+
+    @Test
+    public void testSubtractionTwoMinIsOk(){
+        assertTrue(testee.subtraction(Integer.MIN_VALUE, Integer.MIN_VALUE)==0);
     }
 }
