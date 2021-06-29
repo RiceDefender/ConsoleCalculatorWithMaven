@@ -128,4 +128,9 @@ public class CalculatorTest {
         testee.divisionInt(10,0);
     }
 
+    @Test
+    public void testDivisionOneNegativeByZero(){
+        assertTrue(testee.division(-10.0,0)==Double.NEGATIVE_INFINITY);
+    }
+
 }
