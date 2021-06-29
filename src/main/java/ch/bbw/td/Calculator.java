@@ -19,4 +19,8 @@ public class Calculator {
             return 0;
         }
     }
+
+    public double division(double value1, double value2){
+        return  value1/value2;
+    }
 }
