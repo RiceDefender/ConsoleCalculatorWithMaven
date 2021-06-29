@@ -123,4 +123,9 @@ public class CalculatorTest {
         //Deviding with Double leads to Infinity not Exeptions
     }
 
+    @Test(expected = ArithmeticException.class)
+    public void testDivisionIntOnePositiveByZero(){
+        testee.divisionInt(10,0);
+    }
+
 }
