@@ -1,12 +1,15 @@
 package ch.bbw.td;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
     Calculator testee;
+
+
 
     @Before
     public void testpreperation(){
@@ -108,8 +111,16 @@ public class CalculatorTest {
     public void testDivisionOnePositiveOneNegativeIsOk(){
         assertTrue(testee.division(10.0,-2.0)==-5.0);
     }
+
     @Test
     public void testDivisionTwoNegativeIsOk(){
         assertTrue(testee.division(-20.0, -20.0)==1);
     }
+
+    @Test
+    public void testDivisiononePositiveByZero(){
+        testee.division(10,0);
+        //Deviding with Double leads to Infinity not Exeptions
+    }
+
 }
