@@ -103,4 +103,9 @@ public class CalculatorTest {
 
     @Test
     public void testMultiplicationTwoPositiveIsOk(){ assertTrue(testee.multiplication(5.0, 5.0)==25.0);}
+
+    @Test
+    public void testDivisionOnePositiveOneNegativeIsOk(){
+        assertTrue(testee.division(10.0,-2.0)==-5.0);
+    }
 }
