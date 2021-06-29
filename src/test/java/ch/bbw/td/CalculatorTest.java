@@ -153,4 +153,10 @@ public class CalculatorTest {
         assertTrue(testee.squareRoot(25)==5);
     }
 
+    @Test
+    public void testSquareRootOneNegativeIsOk(){
+        assertNotEquals(testee.squareRoot(-25),0);
+        //Comparioson no possible NAN
+    }
+
 }
