@@ -93,6 +93,11 @@ public class CalculatorTest {
 
     @Test
     public void testSubtactionOneNegativeOneMaxIsOk(){
-        assertTrue(testee.subtraction(-10,Integer.MAX_VALUE)==9);
+        assertTrue(testee.subtraction(-10, Integer.MAX_VALUE)== Integer.MIN_VALUE - 9);
+    }
+
+    @Test
+    public void testDivisionTwoPositiveIsOk(){
+        assertTrue(testee.division(10.0,2.0)==5.0);
     }
 }
