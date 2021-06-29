@@ -148,4 +148,9 @@ public class CalculatorTest {
         assertTrue(testee.division(0,-10)==0);
     }
 
+    @Test
+    public void testSquareRootOnePositive(){
+        assertTrue(testee.squareRoot(25)==5);
+    }
+
 }
