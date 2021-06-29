@@ -133,4 +133,9 @@ public class CalculatorTest {
         assertTrue(testee.division(-10.0,0)==Double.NEGATIVE_INFINITY);
     }
 
+    @Test(expected = ArithmeticException.class)
+    public void testDivisionIntOneNegativeByZero(){
+        testee.divisionInt(-10,0);
+    }
+
 }
