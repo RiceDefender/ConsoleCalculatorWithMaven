@@ -138,4 +138,9 @@ public class CalculatorTest {
         testee.divisionInt(-10,0);
     }
 
+    @Test
+    public void testDivisionOneZeroOnePositive(){
+        assertTrue(testee.division(0,10)==0);
+    }
+
 }
