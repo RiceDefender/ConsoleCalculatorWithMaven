@@ -90,4 +90,9 @@ public class CalculatorTest {
     public void testSubtractionOneMinOneMaxIsOk(){
         assertTrue(testee.subtraction(Integer.MIN_VALUE, Integer.MAX_VALUE)== 1);
     }
+
+    @Test
+    public void testSubtactionOneNegativeOneMaxIsOk(){
+        assertTrue(testee.subtraction(-10,Integer.MAX_VALUE)==9);
+    }
 }
