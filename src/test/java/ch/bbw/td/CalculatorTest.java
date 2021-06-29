@@ -143,4 +143,9 @@ public class CalculatorTest {
         assertTrue(testee.division(0,10)==0);
     }
 
+    @Test
+    public void testDivisionOneZeroOneNegative(){
+        assertTrue(testee.division(0,-10)==0);
+    }
+
 }
