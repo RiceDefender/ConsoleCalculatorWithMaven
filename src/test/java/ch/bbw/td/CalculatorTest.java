@@ -80,4 +80,9 @@ public class CalculatorTest {
     public void testSubtractionTwoMinIsOk(){
         assertTrue(testee.subtraction(Integer.MIN_VALUE, Integer.MIN_VALUE)==0);
     }
+
+    @Test
+    public void testSubtractionTwoMaxIsOk(){
+        assertTrue(testee.subtraction(Integer.MAX_VALUE, Integer.MAX_VALUE)== 0);
+    }
 }
