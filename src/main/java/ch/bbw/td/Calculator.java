@@ -28,6 +28,11 @@ public class Calculator {
         return val1/val2;
     }
 
+
+    public double squareRoot(double val1){
+        return Math.sqrt(val1);
+    }
+
     protected double multiplication(double value1, double value2){ return value1*value2;}
 
     //private can not be used for tests because its private use public
