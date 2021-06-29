@@ -119,7 +119,7 @@ public class CalculatorTest {
 
     @Test
     public void testDivisiononePositiveByZero(){
-        testee.division(10,0);
+        assertTrue(testee.division(10,0)==Double.POSITIVE_INFINITY);
         //Deviding with Double leads to Infinity not Exeptions
     }
 
