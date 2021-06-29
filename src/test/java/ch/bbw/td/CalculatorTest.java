@@ -100,4 +100,7 @@ public class CalculatorTest {
     public void testDivisionTwoPositiveIsOk(){
         assertTrue(testee.division(10.0,2.0)==5.0);
     }
+
+    @Test
+    public void testMultiplicationTwoPositiveIsOk(){ assertTrue(testee.multiplication(5.0, 5.0)==25.0);}
 }
