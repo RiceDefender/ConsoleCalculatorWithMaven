@@ -108,4 +108,8 @@ public class CalculatorTest {
     public void testDivisionOnePositiveOneNegativeIsOk(){
         assertTrue(testee.division(10.0,-2.0)==-5.0);
     }
+    @Test
+    public void testDivisionTwoNegativeIsOk(){
+        assertTrue(testee.division(-20.0, -20.0)==1);
+    }
 }
