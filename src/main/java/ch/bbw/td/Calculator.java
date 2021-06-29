@@ -24,6 +24,10 @@ public class Calculator {
         return  value1/value2;
     }
 
+    public int divisionInt(int val1,int val2){
+        return val1/val2;
+    }
+
     protected double multiplication(double value1, double value2){ return value1*value2;}
 
     //private can not be used for tests because its private use public
